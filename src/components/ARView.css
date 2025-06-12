@@ -136,3 +136,6 @@ code {
 .ar-status.closed {
   bottom: 45px; /* posisi saat navbar closed */
 }
+#ARButton {
+  bottom: 20%;
+}
