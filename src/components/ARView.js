@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import * as THREE from 'three';
-// import { ARButton } from 'three/examples/jsm/webxr/ARButton';
+import { ARButton } from 'three/examples/jsm/webxr/ARButton';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { XREstimatedLight } from 'three/examples/jsm/webxr/XREstimatedLight';
 import { useParams, useNavigate } from 'react-router-dom';
