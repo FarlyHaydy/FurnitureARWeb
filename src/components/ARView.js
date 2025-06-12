@@ -96,13 +96,13 @@ function ARView() {
       scene.remove(xrLight);
     });
 
-    // let arButton = ARButton.createButton(renderer, {
-    //   requiredFeatures: ["hit-test"],
-    //   optionalFeatures: ["dom-overlay", "light-estimation"],
-    //   domOverlay: { root: document.body },
-    // });
-    // arButton.style.bottom = "22%";
-    // document.body.appendChild(arButton);
+    let arButton = ARButton.createButton(renderer, {
+      requiredFeatures: ["hit-test"],
+      optionalFeatures: ["dom-overlay", "light-estimation"],
+      domOverlay: { root: document.body },
+    });
+    arButton.style.bottom = "22%";
+    document.body.appendChild(arButton);
 
     for (let i = 0; i < models.length; i++) {
       const loader = new GLTFLoader();
